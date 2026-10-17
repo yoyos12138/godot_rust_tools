@@ -43,7 +43,9 @@ func run_sync() -> bool:
 	var exit_code := OS.execute(command_line.path, command_line.arguments, output, read_stderr, open_console)
 
 	var color_output := RustToolsAnsiEscapeCodes.to_bbcode(output[0])
+	var color_error := RustToolsAnsiEscapeCodes.to_bbcode(output[1])
 	print_rich(color_output)
+	print_rich(color_error)
 
 	return exit_code == 0
 

@@ -12,6 +12,14 @@ static var _foreground_colors := {
 	35: "magenta",
 	36: "cyan",
 	37: "white",
+	90: "#555555",
+	91: "#ff5555",
+	92: "#55ff55",
+	93: "#ffff55",
+	94: "#5555ff",
+	95: "#ff55ff",
+	96: "#55ffff",
+	97: "#ffffff",
 }
 
 ## Converts terminal ANSI escape sequences to bbcode for display in Godot's console.
